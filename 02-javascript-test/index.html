@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>02-Venue-Booking-System</title>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Check Availability room</h2>
+      <form id="myForm">
+        <div class="form-group">
+          <label for="roomId">Room Id</label>
+          <input
+            type="text"
+            id="roomId"
+            name="roomId"
+            placeholder="Ex. A101"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="startTime">Start Time</label>
+          <input
+            type="datetime-local"
+            id="startTime"
+            name="startTime"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="endTime">End Time</label>
+          <input type="datetime-local" id="endTime" name="endTime" required />
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div class="output" id="output"></div>
+    </div>
+
+    <!-- เช็ครายสัปดาห์ -->
+    <div class="check-room">
+      <a href="current-bookings.html" class="btn-check-room"
+        >current bookings >
+      </a>
+    </div>
+  </body>
+</html>

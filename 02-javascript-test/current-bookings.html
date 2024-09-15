@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>current-bookings</title>
+    <script type="module" src="script2.js"></script>
+  </head>
+  <body>
+    <h1 style="text-align: center">Current bookings</h1>
+
+    <!-- form input roomId -->
+    <form id="formGetRoomId">
+      <div class="form-group">
+        <label for="roomId">Room Id</label>
+        <input
+          type="text"
+          id="roomId"
+          name="roomId"
+          placeholder="Ex. A101"
+          required
+        />
+      </div>
+      <button type="submit" class="btn-submit-roomId">Submit</button>
+    </form>
+
+    <!-- Content -->
+    <div class="tab-container">
+      <div class="tabs">
+        <button class="tab-button" id="today-btn">Today</button>
+        <button class="tab-button" id="thisweek-btn">This week</button>
+        <button class="tab-button" id="nextweek-btn">Next week</button>
+      </div>
+
+      <div class="tab-content" id="today">
+        <h2>Today</h2>
+        <p id="content-today">กรุณากรอก Room Id เช่น A101</p>
+      </div>
+
+      <div class="tab-content" id="thisweek" style="display: none">
+        <h2>This week</h2>
+        <p id="content-thisweek">กรุณากรอก Room Id เช่น A101</p>
+      </div>
+
+      <div class="tab-content" id="nextweek" style="display: none">
+        <h2>Next week</h2>
+        <p id="content-nextweek">กรุณากรอก Room Id เช่น A101</p>
+      </div>
+    </div>
+
+    <!-- Button Back -->
+    <div class="check-room">
+      <a href="index.html" class="btn-check-room">< Back</a>
+    </div>
+  </body>
+</html>
