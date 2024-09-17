@@ -33,6 +33,7 @@ export const getBookingsForWeek = (data, roomId, weekNo) => {
 
   startDate.setHours(1, 1, 1);
   endDate.setHours(22, 59, 59);
+  
 
   return data.filter((item) => {
     return (
@@ -43,5 +44,5 @@ export const getBookingsForWeek = (data, roomId, weekNo) => {
       )
     );
   });
-
+  
 };
